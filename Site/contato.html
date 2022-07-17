@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contato - Barbearia Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1><img src="../logo.png" alt="Logo da Barbearia Alura"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="e-mail">E-mail</label>
+                <input type="email" id="e-mail" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="65" rows="10" class="input-padrao" required></textarea>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radioemail"><input type="radio" name="contato" value="email" id="radioemail">Email</label>
+                    
+
+                    <label for="radio-telefone"><input type="radio" value="telefone" name="contato" id="radio-telefone">Telefone</label>
+                
+
+                    <label for="radio-whatsapp"><input type="radio" value="whatsapp" name="contato" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fieldset>
+
+                <fieldset>   
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select name="" id="">
+                        <option value="">Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por e-mail?</label>
+
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+
+        <footer>
+            <img src="../logo-branco.png" alt="Logo da Barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2022</p>
+        </footer>
+    </body>
+</html>
+
+<!--
+    formularios com form
+    label para o texto
+    for para onde vai ser enviado 
+    id para identificar no formulário
+    tipo para identificar se é texto ou para enviar
+    value para definir o nome que vai aparecer
+    cols = coluna
+    rows = linhas
+    placeholder - sugestão de como preencher
+    required torna obrigatorio
+    checked já vem marcado por padrão
+    fieldset para marcar melhor um formulário
+    legend para marcar um titulo de um conjunto do formulário
+
+    table para criar uma tabela
+    thead , tbody e tfoot para dividir melhor uma tabela
+    A tag th, que representa a célula do cabeçalho da tabela
+    tr para criar as linhas de uma tabela
+    td para criar as colunas de uma tabela
+    agrupar uma linha e tornar unica usado colspan="X" (total de linnha no X)
+
+    CSS
+
+    p > tag força 1
+    . class força 10 (pode ser usado várias vezes)
+    # id força 100 (pode ser usada só uma vez)
+    transform para fazer uma transformação 
+    transition para colocar como uma transição vai funcionar
+
+-->>
