@@ -152,6 +152,20 @@ td, th {
     width: 100%;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+
 .título-principal {
     text-align: center;
     font-size: 2em;
